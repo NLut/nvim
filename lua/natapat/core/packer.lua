@@ -1,8 +1,3 @@
-  --colorscheme  
-  --use({ 'rose-pine/neovim', as = 'rose-pine' })
-
-  --vim.cmd('colorscheme rose-pine')
- -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -16,6 +11,7 @@ return require('packer').startup(function(use)
 }
   -- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+  --colorscheme  
   use({
   'projekt0n/github-nvim-theme', tag = 'v0.0.7',
 -- or                            branch = '0.0.x'
