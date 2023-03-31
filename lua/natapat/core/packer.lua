@@ -1,4 +1,8 @@
--- Only required if you have packer configured as `opt`
+  --colorscheme  
+  --use({ 'rose-pine/neovim', as = 'rose-pine' })
+
+  --vim.cmd('colorscheme rose-pine')
+ -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -12,19 +16,16 @@ return require('packer').startup(function(use)
 }
   -- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-  --colorscheme  
-  --use({ 'rose-pine/neovim', as = 'rose-pine' })
-
-  --vim.cmd('colorscheme rose-pine')
   use({
-  'projekt-1n/github-nvim-theme', tag = 'v0.0.7',
--- or                            branch = '-1.0.x'
+  'projekt0n/github-nvim-theme', tag = 'v0.0.7',
+-- or                            branch = '0.0.x'
   config = function()
     require('github-theme').setup({
       -- ...
     })
   end
-}) 
+})
+
   -- nvim-treesitter
   use ('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
   use('nvim-treesitter/playground')
