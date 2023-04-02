@@ -1,0 +1,33 @@
+----insert mode----
+- C-h = backspace.
+
+----normal mode----
+- o = create new line beneath.
+- shift + o = create new line above.
+- grw = replace word whith sth in our cliboard.
+- $ = go to the end of the line.
+- ^ = go to the start of the line.
+- shift + a = go to the end of the line and change to insert mode.
+- a = change to insert mode after this char.
+- c + h = delete infront char and change to insert mode.
+- c + l = delete this char and change to insert mode.
+- shift + i = go to at the start of the line and change to insert mode.
+- i = change to insert mode infront of this char.
+- f + 'char' = go to char and : to go to char in next position.
+- C-u = move up maybe half of page.
+- C-d = move down maybe half of page.
+- shift + v = change to visual mode that select whole line.
+- gg = go to the top of page.
+- shift + g = go to the bottom of page.
+
+
+----visual mode----
+- leader + y = yank to global cliboard
+- gcc = comment this line
+- gc + n + h/j/k/l = comment n line
+- :s/word/new word/ = replace word with new word.
+- c = delete current char and change to insert mode.
+
+
+
+ 
