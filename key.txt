@@ -19,7 +19,11 @@
 - shift + v = change to visual mode that select whole line.
 - gg = go to the top of page.
 - shift + g = go to the bottom of page.
-
+- r + 'n' = replace this char with 'n'.
+- w = forward.
+- shift + w = super forward.
+- b = backward.
+- shift + b = super backward.
 
 ----visual mode----
 - leader + y = yank to global cliboard
