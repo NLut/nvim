@@ -11,3 +11,5 @@ require("natapat.plug.lualine")
 require("natapat.plug.comment")
 require("natapat.plug.autopair")
 require("natapat.plug.harpoon")
+require("natapat.plug.toggleterm")
+

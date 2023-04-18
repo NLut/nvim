@@ -66,5 +66,8 @@ return require('packer').startup(function(use)
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-
+  -- toggleterm-terminal 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+end}
 end)
