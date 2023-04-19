@@ -24,6 +24,7 @@
 - shift + w = super forward.
 - b = backward.
 - shift + b = super backward.
+- s = delete current selection and change to insert mode.
 
 ----visual mode----
 - leader + y = yank to global cliboard
