@@ -1,5 +1,6 @@
 ----insert mode----
 - C-h = backspace.
+- use <tab> to cycle suggested word.
 
 ----normal mode----
 - o = create new line beneath.
