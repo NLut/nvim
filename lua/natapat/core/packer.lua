@@ -69,5 +69,15 @@ return require('packer').startup(function(use)
   -- toggleterm-terminal 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
-end}
+  end}
+-- nvim-tree
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end
+}
 end)

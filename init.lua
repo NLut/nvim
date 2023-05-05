@@ -12,4 +12,5 @@ require("natapat.plug.comment")
 require("natapat.plug.autopair")
 require("natapat.plug.harpoon")
 require("natapat.plug.toggleterm")
+require("natapat.plug.nvim-tree")
 
