@@ -27,6 +27,7 @@
 - shift + b = super backward.
 - s = delete current selection and change to insert mode.
 - shift + s = delete through right.
+- . = copy whole current line and paste to the next line.
 
 ----visual mode----
 - leader + y = yank to global cliboard
