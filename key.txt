@@ -27,6 +27,7 @@
 - shift + b = super backward.
 - s = delete current selection and change to insert mode.
 - shift + s = delete through right.
+- . = copy whole current line and paste to the next line.
 
 ----visual mode----
 - leader + y = yank to global cliboard
@@ -34,6 +35,9 @@
 - gc + n + h/j/k/l = comment n line
 - :s/word/new word/ = replace word with new word.
 - c = delete current char and change to insert mode.
+
+---- nvim tree ----
+- C + t at file in nvim tree tab to open new buffer.
 
 
 
