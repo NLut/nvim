@@ -1,9 +1,11 @@
+
+-- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  -- Telescope 
+ -- Telescope 
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.1',
 -- or                            , branch = '0.1.x',
@@ -12,16 +14,19 @@ return require('packer').startup(function(use)
   -- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
   --colorscheme  
-  use({
-  'projekt0n/github-nvim-theme', tag = 'v0.0.7',
--- or                            branch = '0.0.x'
+use({
+  'projekt0n/github-nvim-theme',
   config = function()
     require('github-theme').setup({
       -- ...
     })
+
+    vim.cmd('colorscheme github_dark')
   end
 })
+  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
 
+  -- vim.cmd('colorscheme rose-pine')
   -- nvim-treesitter
   use ('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
   use('nvim-treesitter/playground')
