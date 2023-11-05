@@ -7,11 +7,11 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
  -- Telescope 
   use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
-  -- dependency for better sorting performance
+-- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
   --colorscheme  
 use({
@@ -21,7 +21,7 @@ use({
       -- ...
     })
 
-    vim.cmd('colorscheme github_dark')
+    vim.cmd('colorscheme github_dark_dimmed')
   end
 })
   -- use({ 'rose-pine/neovim', as = 'rose-pine' })
@@ -85,4 +85,5 @@ use {
     require("nvim-tree").setup {}
   end
 }
+    use {'stevearc/vim-arduino'}
 end)
