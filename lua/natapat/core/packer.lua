@@ -86,4 +86,12 @@ use {
   end
 }
     use {'stevearc/vim-arduino'}
+    -- live-server-npm
+    use({
+      "aurum77/live-server.nvim",
+        run = function()
+          require"live_server.util".install()
+        end,
+        cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+      })
 end)
