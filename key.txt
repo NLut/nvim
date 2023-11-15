@@ -35,6 +35,7 @@
 - gc + n + h/j/k/l = comment n line
 - :s/word/new word/ = replace word with new word.
 - c = delete current char and change to insert mode.
+- shift + u = capitalize.
 
 ---- nvim tree ----
 - C + t at file in nvim tree tab to open new buffer.
