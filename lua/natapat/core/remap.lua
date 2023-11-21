@@ -9,6 +9,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- delete single character without copying into register
 vim.keymap.set("n", "x", '"_x')
+vim.keymap.set("v", "x", '"_x')
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 

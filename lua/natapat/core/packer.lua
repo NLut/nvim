@@ -50,6 +50,7 @@ use({
     {'saadparwaiz1/cmp_luasnip'}, -- Optional
     {'hrsh7th/cmp-nvim-lua'},     -- Optional
 
+
     -- Snippets
     {'L3MON4D3/LuaSnip'},             -- Required
     {'rafamadriz/friendly-snippets'}, -- Optional
