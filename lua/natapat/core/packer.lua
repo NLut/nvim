@@ -95,7 +95,9 @@ use {
         end,
         cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
       })
+    --vim-be-good
     use { 'ThePrimeagen/vim-be-good' }
+    --nvim-surround
     use({
         "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -105,6 +107,7 @@ use {
             })
         end
     })
+    -- nvim prettier
     use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
