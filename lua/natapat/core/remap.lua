@@ -36,3 +36,4 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>");
 vim.keymap.set("n", "<leader>pt", ":Prettier<CR>")
+vim.keymap.set("n", "<leader>ls", ":LiveServer<CR>")
