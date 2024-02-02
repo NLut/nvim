@@ -14,16 +14,17 @@ return require('packer').startup(function(use)
 -- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
   --colorscheme  
-use({
-  'projekt0n/github-nvim-theme',
-  config = function()
-    require('github-theme').setup({
-      -- ...
-    })
-
-    vim.cmd('colorscheme github_dark_dimmed')
-  end
-})
+  use("folke/tokyonight.nvim")
+-- use({
+--   'projekt0n/github-nvim-theme',
+--   config = function()
+--     require('github-theme').setup({
+--       -- ...
+--     })
+--
+--     vim.cmd('colorscheme github_dark_dimmed')
+--   end
+-- })
   -- use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   -- vim.cmd('colorscheme rose-pine')
@@ -111,4 +112,14 @@ use {
     use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
+    --Browser-sync (use when live-server is un usable)
+    use('ray-x/web-tools.nvim')
+    -- Lazygit
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 end)

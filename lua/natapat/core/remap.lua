@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -20,7 +21,8 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
-vim.keymap.set("i", "<C-j><C-k>", "<Esc>")
+
+vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
@@ -37,3 +39,8 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>");
 vim.keymap.set("n", "<leader>pt", ":Prettier<CR>")
 vim.keymap.set("n", "<leader>ls", ":LiveServer<CR>")
+vim.keymap.set("n", "<leader>ps", ":PackerSync<CR>")
+
+-- browsersync keymap
+-- vim.keymap.set("n", "bo", ":BrowserOpen<CR>")
+-- vim.keymap.set("n", "bc", ":BrowserStop<CR>")
