@@ -122,4 +122,8 @@ use {
             "nvim-lua/plenary.nvim",
         },
     })
+    -- Noice
+use {'MunifTanjim/nui.nvim'}
+use {'rcarriga/nvim-notify'}
+use {'folke/noice.nvim'}
 end)
