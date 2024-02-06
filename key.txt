@@ -1,7 +1,7 @@
 ----insert mode----
 - C-h = backspace.
 - use <tab> to cycle suggested word.
-
+- <tab> at the any part of variable or function to view more infomation or to open auto suggestion. 
 ----normal mode----
 - y = yank.
 - yy = yank whold line.
@@ -31,7 +31,7 @@
 - b = backward.
 - shift + b = super backward.
 - s = delete current selection and change to insert mode.
-- shift + s = delete through right.
+- shift + s = delete whole line and change to insert mode.
 - . = copy whole current line and paste to the next line.
 
 - gcc = comment this line
@@ -100,5 +100,9 @@
 - leader ff = fuzzy finder.
 - leader fgf = fuzzy finder git.
 
-
+---- fugitive ----
+- :Gvdiff -> vim.cmd.Gvdiff
+- :Gvdiffsplit!
+- :buffer -> show version
+- :diffget <selected version> -> select version
  

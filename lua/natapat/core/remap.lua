@@ -36,11 +36,17 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
+ -- ToggleTerm
 vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>");
+ -- Prettier
 vim.keymap.set("n", "<leader>pt", ":Prettier<CR>")
+ -- LiveServer
 vim.keymap.set("n", "<leader>ls", ":LiveServer<CR>")
+ -- PackerSync
 vim.keymap.set("n", "<leader>ps", ":PackerSync<CR>")
 
+ -- LazyGit
+vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 -- browsersync keymap
 -- vim.keymap.set("n", "bo", ":BrowserOpen<CR>")
 -- vim.keymap.set("n", "bc", ":BrowserStop<CR>")
