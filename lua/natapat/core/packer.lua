@@ -1,4 +1,3 @@
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -13,8 +12,10 @@ return require('packer').startup(function(use)
 }
 -- dependency for better sorting performance
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-  --colorscheme  
+  --colorscheme tokyonight
   use("folke/tokyonight.nvim")
+  --colorscheme catpuccin
+  use { "catppuccin/nvim", as = "catppuccin" }
 -- use({
 --   'projekt0n/github-nvim-theme',
 --   config = function()
@@ -123,7 +124,12 @@ use {
         },
     })
     -- Noice
-use {'MunifTanjim/nui.nvim'}
-use {'rcarriga/nvim-notify'}
-use {'folke/noice.nvim'}
+    use {'MunifTanjim/nui.nvim'}
+    use {'rcarriga/nvim-notify'}
+    use {'folke/noice.nvim'}
+
+    -- gitui 
+    -- use { 'aspeddro/gitui.nvim' }
+    -- Tabnine-copilot
+    -- use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
 end)

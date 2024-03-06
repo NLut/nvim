@@ -50,3 +50,8 @@ vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 -- browsersync keymap
 -- vim.keymap.set("n", "bo", ":BrowserOpen<CR>")
 -- vim.keymap.set("n", "bc", ":BrowserStop<CR>")
+
+-- Yank Current Path
+vim.keymap.set("n", "<leader>yp", ":!pwd | pbcopy<CR><CR>")
+
+
