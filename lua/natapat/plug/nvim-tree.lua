@@ -7,6 +7,7 @@ end
 -- recommended settings from nvim-tree documentation
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.opt.relativenumber = true -- show relative line numbers
 
 -- change color for arrows in tree to light blue
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
@@ -14,6 +15,7 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 -- configure nvim-tree
 nvimtree.setup({
   -- change folder arrow icons
+  view = {relativenumber = true} ,
   renderer = {
     icons = {
       glyphs = {

@@ -60,6 +60,7 @@
 - cw = delete from current position to the end of word and change to insert mode.
 - cb = delete from start of word to current potition and change to insert mode.
 
+---- additional ----
 - % = match with it's bracket / tag.
 - ? + string = find string. (case sensitive)
 - / + string = find string. (non case sensitive)
@@ -79,6 +80,7 @@
 - ysb + ""/''/<>/{} = wrap word with this. // cursur at end of word // form start until current position
 - ysiw + ""/''/<>/{} = wrap word with this. // can use from any part of the word. 
 - cs + quote or bracket what want to change + quote or bracket that want to change to.
+- cs + quote or bracket what want to change + t + html tag = change from any thing that wrap to html tag.
 - ds + quote or bracket what want to delete.
 
 ----visual mode----
@@ -106,10 +108,11 @@
 - :Gvdiffsplit!
 - :buffer -> show version
 - :diffget <selected version> -> select version
- 
+
 
 ---addition---
 :% is used to replace the contents of the file with the output of the shell command
 
 ---- TMUX ----
 - <C-d> -> kill window
+- prefix [ to freehand mode and C-vv to block selection.

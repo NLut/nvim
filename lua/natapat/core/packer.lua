@@ -127,7 +127,8 @@ use {
     use {'MunifTanjim/nui.nvim'}
     use {'rcarriga/nvim-notify'}
     use {'folke/noice.nvim'}
-
+    -- nvim magma-nvim
+    -- use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
     -- gitui 
     -- use { 'aspeddro/gitui.nvim' }
     -- Tabnine-copilot
