@@ -2,7 +2,10 @@
 - C-h = backspace.
 - use <tab> to cycle suggested word.
 - <tab> at the any part of variable or function to view more infomation or to open auto suggestion. 
+
 ----normal mode----
+- shift + k = more inforemation.
+
 - y = yank.
 - yy = yank whold line.
 - p = paste.

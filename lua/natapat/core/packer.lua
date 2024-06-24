@@ -84,9 +84,6 @@ use {
   requires = {
     'nvim-tree/nvim-web-devicons', -- optional
   },
-  config = function()
-    require("nvim-tree").setup {}
-  end
 }
     use {'stevearc/vim-arduino'}
     -- live-server-npm

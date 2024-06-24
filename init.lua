@@ -16,8 +16,8 @@ require("natapat.plug.null-ls")
 require("natapat.plug.browser-sync")
 require("natapat.plug.live-server")
 require("natapat.plug.tokyo-night-colorscheme")
--- require("natapat.plug.catpuccin-colorscheme")
 require("natapat.plug.prettier")
+-- require("natapat.plug.catpuccin-colorscheme")
 -- require('tabnine').setup({
 --   disable_auto_comment=true,
 --   accept_keymap="<Tab>",
