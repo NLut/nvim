@@ -4,7 +4,14 @@
 - <tab> at the any part of variable or function to view more infomation or to open auto suggestion. 
 
 ----normal mode----
+** shift **
 - shift + k = more inforemation.
+- shift + j = delete line below.
+- shift + h = go to top visible line.
+- shift + l = go to bottom visible line.
+- shift + v = change to visual mode that select whole line.
+- shift + a = go to the end of the line and change to insert mode.
+- shift + i = go to at the start of the line and change to insert mode.
 
 - y = yank.
 - yy = yank whold line.
@@ -16,16 +23,13 @@
 - grw = replace word whith sth in our cliboard.
 - $ = go to the end of the line.
 - ^ = go to the start of the line.
-- shift + a = go to the end of the line and change to insert mode.
 - a = change to insert mode after this char.
 - c + h = delete infront char and change to insert mode.
 - c + l = delete this char and change to insert mode.
-- shift + i = go to at the start of the line and change to insert mode.
 - i = change to insert mode infront of this char.
 - f + 'char' = go to char and : to go to char in next position.
 - C-u = move up maybe half of page.
 - C-d = move down maybe half of page.
-- shift + v = change to visual mode that select whole line.
 - gg = go to the top of page.
 - shift + g = go to the bottom of page.
 - r + 'n' = replace this char with 'n'.
