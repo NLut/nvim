@@ -54,10 +54,18 @@ return require('packer').startup(function(use)
 
 
     -- Snippets
-    {'L3MON4D3/LuaSnip'},             -- Required
+    -- {'L3MON4D3/LuaSnip'},             -- Required
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
 }
+    -- Snippets
+    use({
+        "L3MON4D3/LuaSnip",
+        -- follow latest release.
+        tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        -- install jsregexp (optional!:).
+        run = "make install_jsregexp"
+    })
       -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   -- replace with register contents using motion (gr + motion) grw -replace word
@@ -130,4 +138,8 @@ use {
     -- use { 'aspeddro/gitui.nvim' }
     -- Tabnine-copilot
     -- use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
+    --
+
+    -- Minimal configuration
+    -- use{ "David-Kunz/gen.nvim" }
 end)

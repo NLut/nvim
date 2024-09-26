@@ -45,6 +45,10 @@ vim.keymap.set("n", "<leader>ls", ":LiveServer<CR>")
  -- PackerSync
 vim.keymap.set("n", "<leader>ps", ":PackerSync<CR>")
 
+ -- Node Prettier
+vim.keymap.set("n", "<leader>npt", ":!npx prettier . --write<CR><CR>")
+
+
  -- LazyGit
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 -- browsersync keymap

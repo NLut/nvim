@@ -44,6 +44,7 @@
 - gcc = comment this line
 - gc + n + h/j/k/l = comment n line
 - dd = delete and yank whold line.
+- shift + d = delete from this position to end of line.
 - dt + ... = delete until that character.
 - d$ = delete from current to end of line.
 - d^ = delete from current to start of line.
@@ -86,6 +87,8 @@
 - ysw + ""/''/<>/{} = wrap word with this. // cursur at start of word // from this until end of word
 - ysb + ""/''/<>/{} = wrap word with this. // cursur at end of word // form start until current position
 - ysiw + ""/''/<>/{} = wrap word with this. // can use from any part of the word. 
+- ysi + ""/''/<>/{} + ""/''/<>/{} = wrap inside these ""/''/<>/{} with ""/''/<>/{}.
+- ysa + ""/''/<>/{} + ""/''/<>/{} = wrap outside these ""/''/<>/{} with ""/''/<>/{}.  
 - cs + quote or bracket what want to change + quote or bracket that want to change to.
 - cs + quote or bracket what want to change + t + html tag = change from any thing that wrap to html tag.
 - ds + quote or bracket what want to delete.
