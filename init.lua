@@ -17,6 +17,9 @@ require("natapat.plug.browser-sync")
 require("natapat.plug.live-server")
 require("natapat.plug.tokyo-night-colorscheme")
 require("natapat.plug.prettier")
+require("natapat.plug.remote-nvim")
+-- require("natapat.plug.remote-sshfs")
+-- require("natapat.plug.conform")
 -- require("natapat.plug.catpuccin-colorscheme")
 -- require('tabnine').setup({
 --   disable_auto_comment=true,

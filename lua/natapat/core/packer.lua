@@ -142,4 +142,10 @@ use {
 
     -- Minimal configuration
     -- use{ "David-Kunz/gen.nvim" }
+  use{"stevearc/conform.nvim"}
+
+  -- remote ssh
+  use{"amitds1997/remote-nvim.nvim"}
+  -- remote-sshfs
+  use{"nosduco/remote-sshfs.nvim"}
 end)
