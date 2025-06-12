@@ -1,6 +1,7 @@
 -- Load lsp-zero v3
 local lsp_zero = require('lsp-zero')
 
+
 -- Enable LSP configuration extension
 lsp_zero.extend_lspconfig()
 
@@ -60,7 +61,21 @@ cmp.setup({
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
     ['<C-Space>'] = cmp.mapping.complete(),
-  },
+    ['<Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+        ['<S-Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+      },
   sources = {
     { name = 'nvim_lsp' },
     { name = 'buffer' },
