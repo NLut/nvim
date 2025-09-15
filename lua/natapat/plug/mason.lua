@@ -1,3 +1,4 @@
+-- UI to download lsp
 require("mason").setup({
     ui = {
         icons = {
@@ -8,6 +9,7 @@ require("mason").setup({
     }
 })
 
+-- Specify LSP server to nvim-lspconfig from installed via mason. 
 require("mason-lspconfig").setup({
     ensure_installed = { "rust_analyzer", "ts_ls" }
 })

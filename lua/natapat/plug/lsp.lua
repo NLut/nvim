@@ -24,6 +24,7 @@ end
 -- Setup language servers using lspconfig
 local lspconfig = require('lspconfig')
 
+-- Start Manual LSP setup
 -- Lua LSP setup (Fix global 'vim')
 lspconfig.lua_ls.setup({
   on_attach = on_attach,
@@ -50,6 +51,7 @@ lspconfig.jdtls.setup({
 lspconfig.clangd.setup({
   on_attach = on_attach,
 })
+-- End Manual LSP setup
 
 -- Diagnostic virtual text
 vim.diagnostic.config({
