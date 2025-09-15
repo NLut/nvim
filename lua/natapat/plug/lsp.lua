@@ -46,10 +46,16 @@ lspconfig.jdtls.setup({
   on_attach = on_attach,
 })
 
+-- C LSP setup
+lspconfig.clangd.setup({
+  on_attach = on_attach,
+})
+
 -- Diagnostic virtual text
 vim.diagnostic.config({
   virtual_text = true,
 })
+
 
 -- Autocompletion setup
 local cmp = require('cmp')
