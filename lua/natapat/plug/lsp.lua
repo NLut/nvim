@@ -6,52 +6,42 @@ local lsp_zero = require('lsp-zero')
 lsp_zero.extend_lspconfig()
 
 -- Define default on_attach behavior
-local on_attach = function(client, bufnr)
-  local opts = {buffer = bufnr, remap = false}
+local opts = {buffer = bufnr, remap = false}
 
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-  vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
-  vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
-  vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts)
-  vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
-  vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
-  vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
-  vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
-end
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
+vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts)
+vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
+vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
+vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
+vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
+vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 
--- Setup language servers using lspconfig
-local lspconfig = require('lspconfig')
-
--- Start Manual LSP setup
--- Lua LSP setup (Fix global 'vim')
-lspconfig.lua_ls.setup({
-  on_attach = on_attach,
+vim.lsp.config['luals'] = {
+  -- Command and arguments to start the server.
+  cmd = { 'lua-language-server' },
+  -- Filetypes to automatically attach to.
+  filetypes = { 'lua' },
+  -- Sets the "workspace" to the directory where any of these files is found.
+  -- Files that share a root directory will reuse the LSP server connection.
+  -- Nested lists indicate equal priority, see |vim.lsp.Config|.
+  root_markers = { { '.luarc.json', '.luarc.jsonc' }, '.git' },
+  -- Specific settings to send to the server. The schema is server-defined.
+  -- Example: https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json
   settings = {
     Lua = {
-      diagnostics = {
-        globals = { 'vim' },
+      runtime = {
+        version = 'LuaJIT',
       }
     }
   }
-})
+}
 
--- Rust Analyzer setup
-lspconfig.rust_analyzer.setup({
-  on_attach = on_attach,
-})
+vim.lsp.enable('luals')
 
--- Java LSP setup
-lspconfig.jdtls.setup({
-  on_attach = on_attach,
-})
 
--- C LSP setup
-lspconfig.clangd.setup({
-  on_attach = on_attach,
-})
--- End Manual LSP setup
 
 -- Diagnostic virtual text
 vim.diagnostic.config({
