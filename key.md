@@ -1,0 +1,129 @@
+----insert mode----
+- C-h = backspace.
+- use <tab> to cycle suggested word.
+- <tab> at the any part of variable or function to view more infomation or to open auto suggestion. 
+
+----normal mode----
+** shift **
+- shift + k = more inforemation.
+- shift + j = delete line below.
+- shift + h = go to top visible line.
+- shift + l = go to bottom visible line.
+- shift + v = change to visual mode that select whole line.
+- shift + a = go to the end of the line and change to insert mode.
+- shift + i = go to at the start of the line and change to insert mode.
+
+- y = yank.
+- yy = yank whold line.
+- p = paste.
+- u = undo.
+- C + r = redo.
+- o = create new line beneath.
+- shift + o = create new line above.
+- $ = go to the end of the line.
+- ^ = go to the start of the line.
+- a = change to insert mode after this char.
+- c + h = delete infront char and change to insert mode.
+- c + l = delete this char and change to insert mode.
+- i = change to insert mode infront of this char.
+- f + 'char' = go to char and : to go to char in next position.
+- C-u = move up maybe half of page.
+- C-d = move down maybe half of page.
+- gg = go to the top of page.
+- shift + g = go to the bottom of page.
+- r + 'n' = replace this char with 'n'.
+- w = forward.
+- shift + w = super forward.
+- b = backward.
+- shift + b = super backward.
+- s = delete current selection and change to insert mode.
+- shift + s = delete whole line and change to insert mode.
+- . = copy whole current line and paste to the next line.
+
+- grw = replace word whith sth in our cliboard.
+- gcc = comment this line
+- gc + n + h/j/k/l = comment n line
+- dd = delete and yank whold line.
+- shift + d = delete from this position to end of line.
+- dt + ... = delete until that character.
+- d$ = delete from current to end of line.
+- d^ = delete from current to start of line.
+- d + number + h/j/k/l = delete until.
+- y + number + h/j/k/l = yank until.
+
+- d + i + ''/""/{}/<>/[]/() = cut in quote / can use any where in line.
+- d + a + ''/""/{}/<>/[]/() = cut in quote include quote/ can use any where in line.
+- c + i + ''/""/{}/<>/[]/() = cut in quote quote and change to insert mode./ can use any where in line.
+- c + a + ''/""/{}/<>/[]/() = cut in quote include quote and change to insert mode./ can use any where in line.
+- y + i + ''/""/{}/<>/[]/() = yank in quote quote and change to insert mode./ can use any where in line.
+- y + a + ''/""/{}/<>/[]/() = yank in quote include quote and change to insert mode./ can use any where in line.
+
+- diw = cut curret word and change.
+- ciw = cut curret word and change to insert mode.
+- yiw = yank current word.
+- viw = select current word.
+
+- dw = delete from current position to the end of word.
+- db = delete from start of word to current potition.
+- cw = delete from current position to the end of word and change to insert mode.
+- cb = delete from start of word to current potition and change to insert mode.
+- q: = history command
+
+---- additional ----
+- % = match with it's bracket / tag.
+- ? + string = find string. (case sensitive)
+- / + string = find string. (non case sensitive)
+- # = go to previous position of word that same as this word.
+- * = go to next position of word that same as this word.
+- leader s = edit whole word what same as current word.
+- C + o = go back to previous position / file
+- gd or C-% = go to that funtion source.
+
+---- wrap ----
+- dst = delete html tag
+- ysst = add html tag /in line tag.
+- ySSt = add html tag /top and bottom tag.
+- yss + ""/''/<>/{} = wrap whole line with this.
+- ys$ + ""/''/<>/{} = wrap form current position to end of line
+- ysw + ""/''/<>/{} = wrap word with this. // cursur at start of word // from this until end of word
+- ysb + ""/''/<>/{} = wrap word with this. // cursur at end of word // form start until current position
+- ysiw + ""/''/<>/{} = wrap word with this. // can use from any part of the word. 
+- ysi + ""/''/<>/{} + ""/''/<>/{} = wrap inside these ""/''/<>/{} with ""/''/<>/{}.
+- ysa + ""/''/<>/{} + ""/''/<>/{} = wrap outside these ""/''/<>/{} with ""/''/<>/{}.  
+- cs + quote or bracket what want to change + quote or bracket that want to change to.
+- cs + quote or bracket what want to change + t + html tag = change from any thing that wrap to html tag.
+- ds + quote or bracket what want to delete.
+
+----visual mode----
+- leader + y = yank to global cliboard
+- :s/word/new word/ = replace word with new word.
+- c = delete current char and change to insert mode.
+- shift + u = capitalize.
+
+---- nvim tree ----
+- leader pv at file in nvim tree tab to open new buffer.
+
+---- terminal ----
+- C + t
+
+---- additional ----
+- leader pt = run prettier.
+- leader ls = run live server.
+- leader ps = run packer sync.
+- leader u = undo tree.
+- leader ff = fuzzy finder.
+- leader fgf = fuzzy finder git.
+
+---- fugitive ----
+- :Gvdiff -> vim.cmd.Gvdiff
+- :Gvdiffsplit!
+- :buffer -> show version
+- :diffget <selected version> -> select version
+
+
+---addition---
+:% is used to replace the contents of the file with the output of the shell command
+
+---- TMUX ----
+- <C-d> -> kill window
+- prefix [ to freehand mode and C-vv to block selection.
