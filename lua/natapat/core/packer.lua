@@ -116,7 +116,7 @@ use {
     })
     -- nvim prettier
     use('neovim/nvim-lspconfig')
-    use('jose-elias-alvarez/null-ls.nvim')
+    use('nvimtools/none-ls.nvim')
     use('MunifTanjim/prettier.nvim')
     --Browser-sync (use when live-server is un usable)
     use('ray-x/web-tools.nvim')
