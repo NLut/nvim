@@ -6,7 +6,7 @@ local lsp_zero = require('lsp-zero')
 lsp_zero.extend_lspconfig()
 
 -- Define default on_attach behavior
-local opts = {buffer = bufnr, remap = false}
+local opts = {buffer = bufnr, remap = false} -- luas struct?
 
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
@@ -56,7 +56,7 @@ cmp.setup({
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
