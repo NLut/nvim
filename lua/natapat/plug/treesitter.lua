@@ -38,3 +38,5 @@ treesitter.setup({
   -- auto install above language parsers
   auto_install = true,
 })
+
+-- use :TSUpdateSync syncronizes existing parsers to ensure they are up-to-date (update)
