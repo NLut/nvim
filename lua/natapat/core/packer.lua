@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
   -- vim.cmd('colorscheme rose-pine')
   -- nvim-treesitter
   use ('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
+  use ('nvim-treesitter/completion-treesitter')
   use('nvim-treesitter/playground')
   use("theprimeagen/harpoon")
   use('mbbill/undotree')
@@ -69,7 +70,7 @@ return require('packer').startup(function(use)
       -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   -- replace with register contents using motion (gr + motion) grw -replace word
-  use("inkarkat/vim-ReplaceWithRegister")  
+  use("inkarkat/vim-ReplaceWithRegister")
   -- commenting with gc | gcc or gc(num)h/j/k/l
   use("numToStr/Comment.nvim")
 
@@ -78,7 +79,7 @@ return require('packer').startup(function(use)
    -- statusline
   use("nvim-lualine/lualine.nvim")
   -- vim-with-me
-  use("ThePrimeagen/vim-with-me")
+  -- use("ThePrimeagen/vim-with-me")
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
